@@ -1,0 +1,61 @@
+.accordion_wraper{
+    font-family: "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #252525;
+    background: #fff;
+    padding: 20px 10px 0;
+    /* border-bottom: 1px solid lightgray; */
+  }
+  
+  .accordion_wraper.active {
+    background-color: #e0dfdf;
+  }
+  
+  .accordion_wraper h2 {
+    margin-left: 50px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .accordion_wraper h2:before {
+    background-color: #FFF;
+    background-image: url(https://www.neimanmarcus.com/category/responsive/expander-plus.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #393939;
+    content: "";
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin-left: -50px;
+  }
+  .accordion_wraper h2.active:before {
+    background-image: url(https://www.neimanmarcus.com/category/responsive/expander-minus.png);
+  }
+  
+  .accordion_wraper .card {
+    max-width: 100%;
+    background: transparent;
+    border: 0;
+  }
+  
+  .accordion_wraper .card-body {
+    border: 0;
+    padding: 0;
+    padding-left:50px;
+    padding-bottom: 30px;
+  }
+
+  .docs-example {
+    position: relative;
+    padding: 3em 0 1em;
+    border: 1px solid #d8d8d8;
+    margin: 1.5rem 0 0;
+    }
+    .assistance-content-title {
+    font-family: Futura,sans-serif;
+    font-size: 21px;
+    padding: 20px 20px 30px 20px;
+    }
