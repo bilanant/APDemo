@@ -1,12 +1,15 @@
 import React, { Fragment } from 'react';
-import LeftContainer from './LeftContainer';
+import { Container } from 'reactstrap';
+import Sidebar from './Sidebar';
 import ReturnAndExchange from './ReturnAndExchange/ReturnAndExchange';
 
 const AssistanceWrapper = () => {
     return (
         <Fragment>
-            <LeftContainer />
-            <ReturnAndExchange />
+            <Container className="d-flex">
+                <Sidebar />
+                <ReturnAndExchange />
+            </Container>
         </Fragment>
     )
 }

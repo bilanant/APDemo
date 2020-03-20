@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { CardBody, Card, Container } from 'reactstrap';
+import { CardBody, Card } from 'reactstrap';
 
 import RaEList from './RaEList';
 
@@ -31,14 +31,14 @@ class ReturnAndExchange extends Component {
 
     render() {
         return (
-            <Container>
-                <Card>
-                    <CardBody>
-                        <h3>ReturnAndExchange</h3>
-                        {this.renderContent()}
-                    </CardBody>
-                </Card>
-            </Container>
+
+            <Card style={{ width: "inherit" }}>
+                <CardBody>
+                    <h3>ReturnAndExchange</h3>
+                    {this.renderContent()}
+                </CardBody>
+            </Card>
+
         )
     }
 }
