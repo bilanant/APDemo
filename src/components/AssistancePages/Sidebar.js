@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { ListGroup, NavLink } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { ListGroup } from 'reactstrap';
 
 
 class Sidebar extends Component {
@@ -9,10 +10,10 @@ class Sidebar extends Component {
         return (
             <ListGroup>
                 {
-                    this.props.Sidebar.map(({ label, name, icon, ...rest }) => (
-                        <NavLink tag="a" href="#" key={name} {...rest}>
-                            {icon}{label}
-                        </NavLink>
+                    this.props.Sidebar.map(({ label, id, link, name, icon, card }) => (
+                        <Link className="nav-link" to={link} key={id} >
+                            {card ? icon : ''}{label}
+                        </Link>
                     ))
                 }
             </ListGroup >

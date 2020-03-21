@@ -1,61 +1,72 @@
-.accordion_wraper{
-  font-family: "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;
-  font-size: 13px;
-  line-height: 1.5;
+
+.main-container{
+  max-width: 1270px;
+  padding: 50px 15px;
+}
+.list-group .nav-link {
+  border: 0;
   color: #252525;
-  background: #fff;
-  padding: 20px 10px 0;
-  /* border-bottom: 1px solid lightgray; */
-}
-
-.accordion_wraper.active {
-  background-color: #e0dfdf;
-}
-
-.accordion_wraper h2 {
-  margin-left: 50px;
-  color: #333;
-  cursor: pointer;
-}
-
-.accordion_wraper h2:before {
-  background-color: #FFF;
-  background-image: url(https://www.neimanmarcus.com/category/responsive/expander-plus.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  border: 1px solid #393939;
-  content: "";
   display: block;
-  float: left;
-  height: 30px;
-  width: 30px;
-  margin-left: -50px;
+  font-size: 13px;
+  font-family: Futura,sans-serif;
+  line-height: 2.5;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding: 15px 5px;
 }
-.accordion_wraper h2.active:before {
-  background-image: url(https://www.neimanmarcus.com/category/responsive/expander-minus.png);
+.list-group .nav-link:hover {
+  color: #639ec8;
 }
 
-.accordion_wraper .card {
-  max-width: 100%;
-  background: transparent;
+.list-group .nav-link svg,
+.list-group .nav-link img {
+  max-width: 22px;
+  vertical-align: middle;
+  max-height: 22px;
+  padding-right: 4px;
+  margin-right: 5px;
+  width: 24px;
+}
+
+.right-wraper{
+  padding-top: 20px;
+}
+.right-wraper .card {
   border: 0;
+  border-radius: 0;
+  box-shadow: 0 1px 3px #666;
 }
-
-.accordion_wraper .card-body {
-  border: 0;
-  padding: 0;
-  padding-left:50px;
-  padding-bottom: 30px;
-}
-
-.docs-example {
-  position: relative;
-  padding: 3em 0 1em;
-  border: 1px solid #d8d8d8;
-  margin: 1.5rem 0 0;
-  }
-  .assistance-content-title {
+.widgetContainer .widgetTitle {
   font-family: Futura,sans-serif;
   font-size: 21px;
-  padding: 20px 20px 30px 20px;
-  }
+  padding-bottom: 20px;
+}
+.widgetContainer .widgetTitle .nav-link{
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding: .5rem 0rem;
+}
+.widgetContainer .widgetTitle a {
+  color: #000;
+}
+.widgetContainer .widgetTitle a:hover {
+  color: #3474ad;
+}
+.widgetContainer .widgetTitle .assistCatIcon, 
+.widgetContainer .widgetTitle .activeCatIcon {
+  max-width: 36px;
+  vertical-align: middle;
+  max-height: 36px;
+  padding-right: 12px;
+  width: 36px;
+  height: 36px;
+}
+.widgetContainer .widgetTitle a:hover svg.assistCatIcon path, 
+.widgetContainer .widgetTitle a:hover svg.activeCatIcon path {
+  fill: #3474ad;
+}
+.widgetContainer a.btn-link {
+  color: #3474ad;
+}

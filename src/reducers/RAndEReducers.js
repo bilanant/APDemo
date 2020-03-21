@@ -1,20 +1,11 @@
 import React from 'react';
 
-// export default () => {
-//     return [
-//         {
-//             title: "Return Policy"
-//         },
-//         {
-//             title: "ShopRunner"
-//         }
-//     ]
-// }
 export default () => {
     return [
         {
             id: 1,
             title: "Return Policy",
+            displayIcon: true,
             content: <div>
                 <p>At Neiman Marcus, we respect and value every customer. Because your trust is important to us, we want you to be completely happy with every purchase. If you are not satisfied, for any reason, we are glad to accept returns of saleable merchandise for a full refund or exchange. Refunds will be credited to the original form of payment. The following rules apply:</p>
                 <ul>
@@ -52,18 +43,26 @@ export default () => {
                 <h3>Other Items</h3>
                 <p>Due to air transportation restrictions and regulations, certain items considered hazardous materials are restricted to ground-only transport. These include aerosols and alcohol-based products (e.g., pressurized spray containers, hairspray, nail polish remover, etc.).</p>
                 <p className="updated">Last Updated February 1, 2020</p>
-                <p data-expander-close="returnpolicy"><a rel="noopener noreferrer" href="" className="button button-small">Close</a></p>
+                <p data-expander-close="returnpolicy"><a rel="noopener noreferrer" href="" className="btn-link">Close</a></p>
             </div>
         },
         {
             id: 2,
+            title: "Start a Return Now",
+            displayIcon: false,
+            link: "https://returns.narvar.com/neimanmarcus/returns",
+            content: ""
+        },
+        {
+            id: 3,
             title: "ShopRunner",
+            displayIcon: true,
             content: <div>
                 <p>ShopRunner is a convenient shopping option available on our site that offers its members free 2-day shipping and free return shipping on select items.</p>
                 <p>Returns are accepted within 30 days of receipt. Return charges will be removed after your items are processed. A fee will not apply to ShopRunner member returns and does not require contacting Customer Care. Altered apparel, special orders, perishable, personalized, and "final sale" items cannot be returned.</p>
                 <p className="updated">Last Updated September 27, 2019</p>
                 <p data-expander-close="shoprunner">
-                    <a href="" className="button button-small">Close</a>
+                    <a href="" className="button btn-link">Close</a>
                 </p>
             </div>
         }

@@ -4,7 +4,7 @@
     line-height: 1.5;
     color: #252525;
     background: #fff;
-    padding: 20px 10px 0;
+    padding: 20px 20px 0;
     /* border-bottom: 1px solid lightgray; */
   }
   
@@ -16,6 +16,9 @@
     margin-left: 50px;
     color: #333;
     cursor: pointer;
+    font-family: Futura,sans-serif;
+    font-size: 21px;
+    padding-bottom: 20px;
   }
   
   .accordion_wraper h2:before {
@@ -30,7 +33,9 @@
     height: 30px;
     width: 30px;
     margin-left: -50px;
+    margin-top: -2px;
   }
+
   .accordion_wraper h2.active:before {
     background-image: url(https://www.neimanmarcus.com/category/responsive/expander-minus.png);
   }
@@ -48,14 +53,25 @@
     padding-bottom: 30px;
   }
 
-  .docs-example {
-    position: relative;
-    padding: 3em 0 1em;
-    border: 1px solid #d8d8d8;
-    margin: 1.5rem 0 0;
-    }
-    .assistance-content-title {
+  .accordion_wraper .list-group-item{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .accordion_wrapper_hidden h2{
+    margin: 1rem 4rem;
+  }
+
+  .accordion_wrapper_hidden h2 a{
+    text-decoration: none ;
+    color: #333;
+    cursor: pointer;
     font-family: Futura,sans-serif;
     font-size: 21px;
-    padding: 20px 20px 30px 20px;
-    }
+    /* padding-bottom: 20px; */
+  }
+
+  .accordion_wraper_hidden h2:before {
+    display: none;
+  }
+

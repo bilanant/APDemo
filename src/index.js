@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './components/App';
 import Welcome from './components/Welcome';
-import AssistanceWrapper from './components/AssistanceWrapper';
+import AssistanceWrapper from './components/AssistancePages/AssistanceWrapper';
 
 import reducers from "./reducers";
 
@@ -18,7 +18,7 @@ ReactDOM.render(
         <BrowserRouter>
             <App>
                 <Route path='/' exact component={Welcome} />
-                <Route path='/ap' exact component={AssistanceWrapper} />
+                <Route path='/ap' component={AssistanceWrapper} />
             </App>
         </BrowserRouter>
     </Provider>

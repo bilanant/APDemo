@@ -18,13 +18,14 @@ class RaEList extends React.Component {
     render() {
         const element = this.props.element;
         return (
-            <ListGroupItem>
-                <div className={this.props.isOpen ? "active accordion_wraper" : "accordion_wraper"}>
+            <ListGroupItem className={'p-0'}>
+
+                <div className={!element.displayIcon ? "accordion_wrapper_hidden" : (this.props.isOpen ? "active accordion_wraper" : "accordion_wraper")}>
                     <h2
                         className={this.props.isOpen ? "active" : ""}
                         onClick={this.toggle}
-                        style={{ marginTop: '1rem', marginBottom: '1rem' }} >
-                        {element.title}
+                    >
+                        {element.link !== undefined && !element.displayIcon ? (<a href={element.link}>{element.title}</a>) : element.title}
                     </h2>
                     <Collapse isOpen={this.props.isOpen}>{element.content}</Collapse>
                 </div>
