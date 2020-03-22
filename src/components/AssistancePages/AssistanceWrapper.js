@@ -1,13 +1,9 @@
 import React, { Fragment } from 'react';
 import { Container, Col, Row } from 'reactstrap';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useParams } from 'react-router-dom';
 import Sidebar from './Sidebar';
-import Cardwraper from './Card';
-import ReturnAndExchange from './ReturnAndExchange/ReturnAndExchange';
-import ShopWithUs from './ShopWithUs/ShopWithUs';
-import Gifts from './Gifts/Gifts';
-import Global from './Global/Global';
-import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
+import RootCard from './RootCard';
+import RootAccordian from './RootAccordian/RootAccordian';
 
 const AssistanceWrapper = () => {
     return (
@@ -20,29 +16,23 @@ const AssistanceWrapper = () => {
                     <Switch>
                         <Route exact path="/ap">
                             <Row>
-                                <Cardwraper />
+                                <RootCard />
                             </Row>
                         </Route>
-                        <Route path="/ap/returns" >
-                            <ReturnAndExchange />
+                            <Route path="/ap/:id" children={<Child/>} >
                         </Route>
-                        <Route path="/ap/shop" >
-                            <ShopWithUs />
-                        </Route>
-                        <Route path="/ap/gifts" >
-                            <Gifts />
-                        </Route>
-                        <Route path="/ap/global" >
-                            <Global />
-                        </Route>
-                        <Route path="/ap/privacy" >
-                            <PrivacyPolicy />
-                        </Route>
+                        
                     </Switch>
                 </Col>
             </Container>
         </Fragment>
     )
 }
-
+function Child() {
+    let { id } = useParams();
+    return (
+        <RootAccordian  page={id}/>
+    );
+  }
+  
 export default AssistanceWrapper

@@ -1,0 +1,98 @@
+
+.table-form {
+    width: 100%;
+    margin: 0;
+  }
+  .orderNumberAssistance {
+    padding-bottom: 20px;
+  }
+  .table-form th, .table-form .td-shrink {
+    white-space: nowrap;
+    width: 1%;
+  }
+  .table-form th, .table-form td {
+    padding-left: 10px;
+  }
+  .table-form th label {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .table-form input[type="submit"]{
+    margin-top: 20px;
+  }
+  
+  textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    background-color: #fff;
+    border: 1px solid #8b8b8b;
+    color: #000;
+    font-family: "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;
+    font-size: 13px;
+    text-align: left;
+    padding-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 28px;
+  }
+  button, a.button, input[type="reset"], input[type="submit"], input[type="button"], input[type="image"] {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    -webkit-appearance: none;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: Arial,"Liberation Sans",FreeSans,sans-serif;
+  }
+  button, a.button, span.button, input[type="button"], input[type="submit"], input[type="reset"] {
+    display: inline-block;
+    font-size: 13px;
+    font-family: Futura,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 42px;
+    line-height: 42px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #e0dfdf;
+    color: #393939;
+  }
+  button, input[type="reset"], input[type="submit"], input[type="button"] {
+    line-height: normal!important;
+  }
+  button:hover, a.button:hover, span.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #393939;
+    color: #000;
+  }
+  button.button-action, a.button.button-action, span.button.button-action, input[type="button"].button-action, input[type="submit"].button-action, input[type="reset"].button-action {
+    background-color: #000;
+    color: #fff;
+  }
+  .widgetContainer button.button-action, .widgetContainer a.button.button-action, .widgetContainer span.button.button-action, .widgetContainer input[type="button"].button-action, .widgetContainer input[type="submit"].button-action, .widgetContainer input[type="reset"].button-action {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
