@@ -103,7 +103,7 @@ export default () => {
         },
         {
             id: 8, path: 'PrivacyPolicy&Terms of Use', label: 'Privacy Policy & Terms of Use', icon: '',
-            link: '/privacy',
+            link: '/ap/privacy',
             card: false
         },
     ]

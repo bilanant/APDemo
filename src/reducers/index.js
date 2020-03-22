@@ -1,9 +1,17 @@
 import { combineReducers } from "redux";
 import RAndEReducers from "./RAndEReducers";
 import SidebarReducers from "./SidebarReducers";
+import SwUReducers from "./SwUReducers";
+import GReducers from "./GReducers";
+import GlobalReducers from "./GlobalReducers";
+import PPReducers from "./PPReducers";
 
 
 export default combineReducers({
+    Sidebar: SidebarReducers,
     ReturnAndExchange: RAndEReducers,
-    Sidebar: SidebarReducers
+    ShopWithUs: SwUReducers,
+    Gifts: GReducers,
+    Global: GlobalReducers,
+    PrivacyPolicy: PPReducers
 });

@@ -2,8 +2,12 @@ import React, { Fragment } from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import { Switch, Route } from 'react-router-dom';
 import Sidebar from './Sidebar';
+import Cardwraper from './Card';
 import ReturnAndExchange from './ReturnAndExchange/ReturnAndExchange';
-import Cardwraper from './Card'
+import ShopWithUs from './ShopWithUs/ShopWithUs';
+import Gifts from './Gifts/Gifts';
+import Global from './Global/Global';
+import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
 
 const AssistanceWrapper = () => {
     return (
@@ -21,6 +25,18 @@ const AssistanceWrapper = () => {
                         </Route>
                         <Route path="/ap/returns" >
                             <ReturnAndExchange />
+                        </Route>
+                        <Route path="/ap/shop" >
+                            <ShopWithUs />
+                        </Route>
+                        <Route path="/ap/gifts" >
+                            <Gifts />
+                        </Route>
+                        <Route path="/ap/global" >
+                            <Global />
+                        </Route>
+                        <Route path="/ap/privacy" >
+                            <PrivacyPolicy />
                         </Route>
                     </Switch>
                 </Col>
