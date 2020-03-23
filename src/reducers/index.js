@@ -5,6 +5,7 @@ import SwUReducers from "./SwUReducers";
 import GReducers from "./GReducers";
 import GlobalReducers from "./GlobalReducers";
 import PPReducers from "./PPReducers";
+import ShippingReducers from "./ShippingReducers";
 
 
 export default combineReducers({
@@ -13,5 +14,6 @@ export default combineReducers({
     ShopWithUs: SwUReducers,
     Gifts: GReducers,
     Global: GlobalReducers,
-    PrivacyPolicy: PPReducers
+    PrivacyPolicy: PPReducers,
+    Shipping: ShippingReducers
 });

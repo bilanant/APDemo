@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardBody, CardTitle } from 'reactstrap';
 import ShippingAndOrder from './ShippingAndOrder/ShippingAndOrder'
 
 class RootCard extends Component {
@@ -20,11 +20,11 @@ class RootCard extends Component {
                     </Link>
                   </CardTitle>
 
-                  <CardText>
+                  <div className="card-text">
                     {
-                      link === '/ap/shipping' ?  <ShippingAndOrder/> : <p>Please provide an order number and email address or phone number to find an order.</p>
+                      link === '/ap/shipping' ? <ShippingAndOrder /> : <span>Please provide an order number and email address or phone number to find an order.</span>
                     }
-                  </CardText>
+                  </div>
 
                   <Link to={link} className={'btn-link'}>
                     View All

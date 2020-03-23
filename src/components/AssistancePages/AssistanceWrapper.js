@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 import RootCard from './RootCard';
 import RootAccordian from './RootAccordian/RootAccordian';
 
-const AssistanceWrapper = () => {
+const AssistanceWrapper = (props) => {
     return (
         <Fragment>
             <Container className="d-flex main-container" >
@@ -19,20 +19,18 @@ const AssistanceWrapper = () => {
                                 <RootCard />
                             </Row>
                         </Route>
-                            <Route path="/ap/:id" children={<Child/>} >
-                        </Route>
-                        
+                        <Route path="/ap/:id" component={Category} />
+
                     </Switch>
                 </Col>
             </Container>
         </Fragment>
     )
 }
-function Child() {
+
+const Category = () => {
     let { id } = useParams();
-    return (
-        <RootAccordian  page={id}/>
-    );
-  }
-  
+    return <RootAccordian page={id} />
+}
+
 export default AssistanceWrapper
