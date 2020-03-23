@@ -53,7 +53,7 @@ class RootAccordian extends Component {
             )
         }
         else {
-            this.renderAccordion(pageName);
+            return this.renderAccordion(pageName);
         }
     }
 
